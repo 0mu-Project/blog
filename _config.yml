@@ -12,7 +12,6 @@ description: 反正就只是個廚站 # this means to ignore newlines until "bas
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 github_username:  orgs/0mu-Project
-gems: [jekyll-paginate]
 paginate: 5
 paginate_path: "/blog/page:num/"
 # Build settings
