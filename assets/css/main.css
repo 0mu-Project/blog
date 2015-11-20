@@ -2148,10 +2148,35 @@
 				}
 
 		ul.actions {
+			  display: inline-block;
 			cursor: default;
 			list-style: none;
-			padding-left: 0;
 		}
+		ul.actions.left {
+		text-align : left ;
+		vertical-align: bottom;
+		float : left;
+		width :50%;
+		}
+		ul.actions.right{
+		text-align :right;
+		vertical-align: bottom;
+		float :right;
+		width:50%;
+		}
+		ul.actions.left li {
+			display: inline-block;
+			padding: 0 1em 0 0;
+			vertical-align: middle;
+		}
+
+		ul.actions.right li {
+			display: inline-block;
+			padding: 0 1em 0 0;
+			vertical-align: middle;
+		}
+
+		
 
 			ul.actions li {
 				display: inline-block;
@@ -2330,15 +2355,15 @@
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		background-color: transparent;
-		border-radius: 0.35em;
-		border: solid 3px #efefef;
+		border-radius: 0em;
+		border: solid 2px #efefef;
 		color: #787878 !important;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 400;
-		height: 3.15em;
-		height: calc(2.75em + 6px);
-		line-height: 2.75em;
+		height: 3.05em;
+		height: calc(2.15em + 6px);
+		line-height: 2.15em;
 		min-width: 10em;
 		padding: 0 1.5em;
 		text-align: center;
@@ -2350,8 +2375,8 @@
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			border-color: #000;
+			color: #000 !important;
 		}
 
 		input[type="submit"]:active,
@@ -2555,8 +2580,8 @@
 
 		#main > section {
 			border-top: solid 2px #efefef;
-			margin: 4em 0 0 0;
-			padding: 4em 0 0 0;
+			margin: 3em 0 0 0;
+			padding: 3em 0 0 0;
 		}
 
 			#main > section:first-child {
