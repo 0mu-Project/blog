@@ -14,6 +14,6 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 github_username:  orgs/0mu-Project
 gems: [jekyll-paginate]
 paginate: 5
-paginate_path: "/blog/page:num"
+paginate_path: "/page:num"
 # Build settings
 markdown: kramdown
