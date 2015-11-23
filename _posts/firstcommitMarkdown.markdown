@@ -2,7 +2,7 @@
 layout: post
 title:  "這是第一篇由0mu MDAU 發送的文章" 
 date: 2015-11-24 00:08:01 +0800
-categories: index 
+categories: jekyll update
 ---
 <!--
 請依照以下格式填寫上面的發文標注
