@@ -3,14 +3,7 @@ layout: post
 title:  "CloudFlare簡單研究" 
 date: 2016-01-04 01:28:00
 ---
-<!--
-請依照以下格式填寫上面的發文標注
-layout: post
-title:  "你要的標題"
-date:   20xx-xx-xx xx:xx:xx
--->
-<!-- 內文  -->
-## 作者：dd-han
+### 作者：dd-han
 
 CloudFlare提供了網站的CDN服務，不少證據也指出他們使用nginx的網頁伺服器。那麼他們的服務到底是怎麼運作的呢？
 
