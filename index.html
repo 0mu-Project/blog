@@ -6,7 +6,9 @@ layout: default
 	<header class="major">
 			<h2>{{ post.title }} @ {{ post.date | date: "%b %-d, %Y" }}</h2>
 		</header>
-		<p>{{ post.content | truncatewords:5}}</p>
+		<div>
+			<p>{{ post.content | truncatewords:6}}</p>
+		</div>
 		<ul class="actions left"> 
 		    <li><a>{{ post.date | date: "%b %-d, %Y" }}</a></li>
 			</ul>	
