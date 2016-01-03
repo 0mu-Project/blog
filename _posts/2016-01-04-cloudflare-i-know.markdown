@@ -3,7 +3,7 @@ layout: post
 title:  "CloudFlare簡單研究" 
 date: 2016-01-04 01:28:00
 ---
-### 作者：dd-han
+作者：dd-han
 
 CloudFlare提供了網站的CDN服務，不少證據也指出他們使用nginx的網頁伺服器。那麼他們的服務到底是怎麼運作的呢？
 
