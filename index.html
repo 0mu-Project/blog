@@ -9,14 +9,16 @@ layout: default
 		<div>
 			<p>{{ post.content | truncatewords:6}}</p>
 		</div>
+		<div>
 		<ul class="actions left"> 
 		    <li><a>{{ post.date | date: "%b %-d, %Y" }}</a></li>
 			</ul>	
 		<ul class="actions right">
 			<li><a href="{{ post.url | prepend: site.baseurl }}" class="button">繼續閱讀</a></li>
-			</ul>
-		</section>
-		</br>
+		</ul>
+		<br />
+		</div>
+	</section>
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
