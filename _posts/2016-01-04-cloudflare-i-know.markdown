@@ -55,9 +55,9 @@ CloudFlare提供了網站的CDN服務，不少證據也指出他們使用nginx�
     Address:        192.168.1.1#53
 
     Non-authoritative answer:
-    Name:   cloud-home.dd-han.tw
+    Name:   cloud-test1111.dd-han.tw
     Address: 104.18.45.37
-    Name:   cloud-home.dd-han.tw
+    Name:   cloud-test1111.dd-han.tw
     Address: 104.18.44.37
 
 
