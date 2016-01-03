@@ -10,6 +10,8 @@ title:  "你要的標題"
 date:   20xx-xx-xx xx:xx:xx
 -->
 <!-- 內文  -->
+## 作者：dd-han
+
 CloudFlare提供了網站的CDN服務，不少證據也指出他們使用nginx的網頁伺服器。那麼他們的服務到底是怎麼運作的呢？
 
 起先，因為我個自己各種把玩過nginx設定，我知道有一種誇張的作法是把nginx當DNS用，於是我以為他們是這樣做的（這也是我想讓一個網址用瀏覽器開會出現Google Sites頁面、用MINECRAFT卻可以連到我的伺服器的解法），也就是把nginx當DNS Server用：
