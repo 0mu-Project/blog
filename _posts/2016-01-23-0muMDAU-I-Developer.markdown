@@ -25,7 +25,7 @@ date: 2016-01-23 11:30:00
 
 1月23日 新增 imgur 上傳功能：（詳細技術晚點在寫
 
-![imgur update](http://i.imgur.com/rNgcipa.png "imgur")
+<img src="http://i.imgur.com/rNgcipa.png "" style="max-width: 100%"></img>
 
 最後附上 Code ，請喜歡我們的專案的朋友們不吝嗇的給我們 Stars：
 
