@@ -23,8 +23,9 @@ date: 2016-01-23 11:30:00
 
 這篇文章只是拿來記錄一些開發上面有趣的過程。
 
-最後附上 Code ：
-<br />
+最後附上 Code ，請喜歡我們的專案的朋友們不吝嗇的給我們 Stars：
+
+
 <a class="embedly-card" href="https://github.com/0mu-Project/0muMDAU-Flask">0mu-Project/0muMDAU-Flask</a>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
