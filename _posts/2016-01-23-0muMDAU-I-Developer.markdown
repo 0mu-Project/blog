@@ -6,6 +6,8 @@ date: 2016-01-23 11:30:00
 作者：ZeroMu
 
 部落格系統這種東西百家齊放 像是Wordpress, October, Ghost... 
+
+<br />
 但是總覺得不是我所喜歡使用的，加上自己又會 Python 因此就有了這個東西出現了
 此系統的全名是 “0mu Markdown Distributed Automatic-git Upload-sys”
 <br />
