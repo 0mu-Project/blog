@@ -23,6 +23,10 @@ date: 2016-01-23 11:30:00
 
 這篇文章只是拿來記錄一些開發上面有趣的過程。
 
+1月23日 新增 imgur 上傳功能：（詳細技術晚點在寫
+
+![imgur update](http://i.imgur.com/rNgcipa.png "imgur")
+
 最後附上 Code ，請喜歡我們的專案的朋友們不吝嗇的給我們 Stars：
 
 
