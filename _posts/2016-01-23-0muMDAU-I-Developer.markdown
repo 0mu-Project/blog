@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "0MuMDAU 分散式部落格管理系統開發歷程" 
-date: 2016-01-04 01:28:00
+date: 2016-01-23 11:30:00
 ---
 作者：ZeroMu
 
