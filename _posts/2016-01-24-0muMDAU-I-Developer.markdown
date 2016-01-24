@@ -34,18 +34,19 @@ date: 2016-01-23 11:30:00
 
 使用方法如下：
 
-```
-from muMDAU_app.flask_imgur import Imgur
-app.config['IMGUR_ID'] = setting.imgurkey
-imgur_handler = Imgur(app)
 
-@app.route('/upload/imgur', methods=['GET', 'POST'])
-def imgurupload():
-     if request.method == 'POST':
-         image = request.files['fileToUpload']
-         image_data = imgur_handler.send_image(image)
-         return image_data['data']['link']
-```
+> 
+> from muMDAU_app.flask_imgur import Imgur
+> app.config['IMGUR_ID'] = setting.imgurkey
+> imgur_handler = Imgur(app)
+> 
+> @app.route('/upload/imgur', methods=['GET', 'POST'])
+> def imgurupload():
+>      if request.method == 'POST':
+>          image = request.files['fileToUpload']
+>          image_data = imgur_handler.send_image(image)
+>          return image_data['data']['link']
+
 
 這邊先在後端新增一個 route ，使用 Post Only ，return upload url
 使用 imgur-API 的方式進行連接 （[詳細看這](https://api.imgur.com/)）
