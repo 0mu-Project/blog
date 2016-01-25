@@ -24,12 +24,38 @@ date: 2016-01-23 11:30:00
 
 這篇文章只是拿來記錄一些開發上面有趣的過程。
 
-1月23日 新增 imgur 上傳功能：（詳細技術晚點在寫
+1月23日 新增 imgur 上傳功能：
 
 <img src="http://i.imgur.com/rNgcipa.png" style="max-width: 100%">
 
-最後附上 Code ，請喜歡我們的專案的朋友們不吝嗇的給我們 Stars：
+技術上面使用了 [flask-imgur](https://github.com/exaroth/flask-imgur) + ajaxfileupload
 
+這邊有幾點要注意 flask-imgur 的作者做的 site-package，有點問題所以建議直接 fork github的在 py 內 import，  
+
+使用方法如下：
+
+
+
+    from muMDAU_app.flask_imgur import Imgur
+    app.config['IMGUR_ID'] = setting.imgurkey
+    imgur_handler = Imgur(app)
+ 
+    @app.route('/upload/imgur', methods=['GET', 'POST'])
+    def imgurupload():
+          if request.method == 'POST':
+              image = request.files['fileToUpload']
+              image_data = imgur_handler.send_image(image)
+              return image_data['data']['link']
+
+
+這邊先在後端新增一個 route ，使用 Post Only ，return upload url
+使用 imgur-API 的方式進行連接 （[詳細看這](https://api.imgur.com/)）
+
+前端再用個簡單地 ajaxuploadfile 去接 ([詳細請看105-116行](https://github.com/0mu-Project/0muMDAU-Flask/blob/master/muMDAU_app/templates/panel.html))
+
+
+
+最後附上 Code ，請喜歡我們的專案的朋友們不吝嗇的給我們 Stars：
 
 <a class="embedly-card" href="https://github.com/0mu-Project/0muMDAU-Flask">0mu-Project/0muMDAU-Flask</a>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
