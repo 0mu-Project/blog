@@ -1,6 +1,5 @@
 ---
 layout: default
-comments: true
 ---
 <a class="fa fa-backward" href="javascript:history.go(-1);">回上一頁</a>
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
@@ -14,7 +13,6 @@ comments: true
     {{ content }}
   </div>
 
-  {% if post.comments %}
 <div id="disqus_thread"></div>
 <script>
     /**
@@ -37,5 +35,4 @@ comments: true
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-{% endif %}
 </article>
