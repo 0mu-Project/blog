@@ -8,6 +8,7 @@ layout: default
 			<a>發佈日期: {{ post.date | date: "%b %-d, %Y" }} | 作者: {{ post.post_author }} </a>
 		</header>
 		<div>
+			<h3>發佈日期: {{ post.date | date: "%b %-d, %Y" }} | 作者: {{ post.post_author }} </h3>
 			{{ post.content | truncatewords:5}}
 		</div>
 		<div>
