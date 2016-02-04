@@ -5,9 +5,9 @@ layout: default
 <section id="one">
 	<header class="major">
 		<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+			<a>發佈日期: {{ post.date | date: "%b %-d, %Y" }} | 作者: {{ post.post_author }} </a>
 		</header>
 		<div>
-			<a>發佈日期:{{ post.date | date: "%b %-d, %Y" }} | 作者: {{ post.post_author }} </a>
 			{{ post.content | truncatewords:5}}
 		</div>
 		<div>
