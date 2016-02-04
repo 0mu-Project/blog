@@ -7,12 +7,13 @@ layout: default
 		<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 		</header>
 		<div>
-			<p>發佈日期:{{ post.date | date: "%b %-d, %Y" }} 作者:{{ page.post_author }} </p>
-			<br />
 			{{ post.content | truncatewords:5}}
 		</div>
 		<div>
 		<ul class="actions left"> 
+			<li>
+			<a>發佈日期:{{ post.date | date: "%b %-d, %Y" }} | 作者: {{ post.post_author }} </a>
+			</li>
 		</ul>	
 		<ul class="actions right">
 			<li><a href="{{ post.url | prepend: site.baseurl }}" class="button">繼續閱讀</a></li>
