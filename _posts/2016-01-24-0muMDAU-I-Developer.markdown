@@ -2,8 +2,8 @@
 layout: post
 title:  "0MuMDAU 分散式部落格管理系統開發歷程" 
 date: 2016-01-23 11:30:00
+post_author: 0mu
 ---
-作者：ZeroMu
 
 部落格系統這種東西百家齊放 像是Wordpress, October, Ghost... 
 
