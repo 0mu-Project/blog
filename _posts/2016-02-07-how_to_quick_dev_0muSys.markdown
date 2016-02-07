@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Step By Step 快速基於0muMDAU/0mu-Sys二次開發" 
+title: "Step By Step 快速基於0muMDAU/0mu-Sys二次開發" 
 date: 2016-02-07 08:20:00 +0800
-post_author:0mu
+post_author: 0mu
 ---
 看到這個標題我想有很多人應該都嚇壞了，恩，沒錯雖然這是0MuOfficalBlog，      
 
