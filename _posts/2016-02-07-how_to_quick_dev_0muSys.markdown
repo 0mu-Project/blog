@@ -5,7 +5,7 @@ date: 2016-02-07 11:01:00 +0800
 post_author: 0mu
 ---
 
-![](http://http://i.imgur.com/dCf5iWf.png)
+![](http://i.imgur.com/dCf5iWf.png)
 
 看到這個標題我想有很多人應該都嚇壞了，恩，沒錯雖然這是0MuOfficalBlog，
 
