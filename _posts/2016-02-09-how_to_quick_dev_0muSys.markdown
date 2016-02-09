@@ -58,7 +58,7 @@ envri.py => MDAUServer.py => Import muMDAU_app => 去引入各個模組.py
 > 確認是否有更新版本的 MDAU/sys      
 > 檢測 Port 是否有人使用     
 > 初次創建 DB 資料	    
-> 最後利用 subprocess 呼叫 MDAUServer.py   
+> 最後利用 subprocess 呼叫 MDAUServer.py
 
 
 * MDAUServer 的用途就是呼叫主 Flask app 庫跟 Server Log 有以下這些項目
@@ -67,6 +67,4 @@ envri.py => MDAUServer.py => Import muMDAU_app => 去引入各個模組.py
 > 在此引入 setting.py 導入 appkey 也就是 session 用的 hashkey       
 > werkzeug 的細節設定，例如 proxy 的 hook     
 > 判定 debug 模式是否開啟     
-> 最後把 logging 指定位置 並且加入 github log     
-
----
+> 最後把 logging 指定位置 並且加入 github log
