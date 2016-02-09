@@ -52,28 +52,19 @@ envri.py => MDAUServer.py => Import muMDAU_app => 去引入各個模組.py
 快速講解各個部分的用途 
 
 * envri.py 的用途就是 WatchDog 跟 環境準備其用途有以下這些項目
- >第一次環境的確認，檢測使用者使用Python還是pypy 
- 
- >第一次軟體套件的預先安裝（Flask / pip）
- 
- >確認是否有更新版本的 MDAU/sys 
- 
- >檢測 Port 是否有人使用
- 
- >初次創建 DB 資料庫
- 
- >最後利用 subprocess 呼叫 MDAUServer.py
+>  第一次環境的確認，檢測使用者使用Python還是pypy 
+>  第一次軟體套件的預先安裝（Flask / pip）
+>  確認是否有更新版本的 MDAU/sys 
+>  檢測 Port 是否有人使用
+>  初次創建 DB 資料
+>  最後利用 subprocess 呼叫 MDAUServer.py
 
 
 * MDAUServer 的用途就是呼叫主 Flask app 庫跟 Server Log 有以下這些項目
- >從muMDAU_app 呼叫 Flask(app) 
- 
- >在此引入 setting.py 導入 appkey 也就是 session 用的 hashkey
- 
- >werkzeug 的細節設定，例如 proxy 的 hook
- 
- >判定 debug 模式是否開啟
+>  從muMDAU_app 呼叫 Flask(app) 
+>  在此引入 setting.py 導入 appkey 也就是 session 用的 hashkey 
+>  werkzeug 的細節設定，例如 proxy 的 hook
+>  判定 debug 模式是否開啟
+>  最後把 logging 指定位置 並且加入 github log
 
- >最後把 logging 指定位置 並且加入 github log
- 
 
