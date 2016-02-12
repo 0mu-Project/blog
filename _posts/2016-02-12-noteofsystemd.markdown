@@ -10,7 +10,7 @@ post_author: 0mu
 	
 一開始完全沒有任何邏輯找錯誤，心想會不會是 acpid 引起的，但是，
 
-等等 ArchLinux 已經完全拋棄  System V  的架構了，所以  acpid 應該已經被 systemd-logindl 取代了，
+等等 ArchLinux 已經完全拋棄  System V  的架構了，所以  acpid 應該已經被 systemd-logind 取代了，
 
 然後突然恍然大悟，這應該是有東西造成系統喚醒才對，然後就習慣的利用 
 	
