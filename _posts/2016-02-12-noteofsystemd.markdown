@@ -17,9 +17,9 @@ post_author: 0mu
 	journalctl -b -u systemd-logind 
 
 查詢系統，然後就看到了這些 訊息 : 
-		
-		2月 11 12:01:26 reimu-sx2 systemd-logind[307]: Lid closed.
-		2月 11 12:01:26 reimu-sx2 systemd-logind[307]: Suspending...
+	
+	2月 11 12:01:26 reimu-sx2 systemd-logind[307]: Lid closed.
+	2月 11 12:01:26 reimu-sx2 systemd-logind[307]: Suspending...
 	
 所以系統的確有進入睡眠，很明顯就是被喚醒無誤！
 	
