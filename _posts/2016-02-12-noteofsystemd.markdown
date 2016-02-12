@@ -26,13 +26,11 @@ post_author: 0mu
 新增以下的內容
 	
 	[Unit]
- Description=Disable USB wakeup triggers in /proc/acpi/wakeup
- 
- [Service]
- Type=oneshot
- ExecStart=/bin/sh -c "echo EHC1 > /proc/acpi/wakeup; echo EHC2 > /proc/acpi/wakeup; echo XHC > /proc/acpi/wakeup; echo GLAN > /proc/acpi/wakeup"
- ExecStop=/bin/sh -c "echo EHC1 > /proc/acpi/wakeup; echo EHC2 > /proc/acpi/wakeup; echo XHC > /proc/acpi/wakeup; echo GLAN > /proc/acpi/wakeup"
- RemainAfterExit=yes
- 
- [Install]
- WantedBy=multi-user.target
+	Description=Disable USB wakeup triggers in /proc/acpi/wakeup
+	[Service]
+	Type=oneshot
+	ExecStart=/bin/sh -c "echo EHC1 > /proc/acpi/wakeup; echo EHC2 > /proc/acpi/wakeup; echo XHC > /proc/acpi/wakeup; echo GLAN > /proc/acpi/wakeup"
+	ExecStop=/bin/sh -c "echo EHC1 > /proc/acpi/wakeup; echo EHC2 > /proc/acpi/wakeup; echo XHC > /proc/acpi/wakeup; echo GLAN > /proc/acpi/wakeup"
+	RemainAfterExit=yes
+	[Install]
+	WantedBy=multi-user.target
