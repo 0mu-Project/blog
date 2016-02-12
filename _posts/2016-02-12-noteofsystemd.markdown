@@ -2,6 +2,7 @@
 layout: post
 title:  "解決 SystemD Suspend 因為 USB 3.0 造成的睡眠喚醒" 
 date: 2016-02-12 11:31:50 +0800
+category: Linux
 post_author: 0mu
 ---
 前情提要，零夢我是個 ArchLinux 的用家，最近發現我的筆電蓋上螢幕後無法正常睡眠，

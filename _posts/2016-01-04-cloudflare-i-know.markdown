@@ -2,6 +2,7 @@
 layout: post
 title:  "CloudFlare簡單研究" 
 date: 2016-01-04 01:28:00 +0800
+category: nginx
 post_author: dd-han
 ---
 

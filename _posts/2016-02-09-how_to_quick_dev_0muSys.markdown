@@ -2,6 +2,7 @@
 layout: post
 title: "Step By Step 快速基於0muMDAU/0mu-Sys二次開發" 
 date: 2016-02-07 11:01:00 +0800
+category: 0muMDAU
 post_author: 0mu
 ---
 <img src="http://i.imgur.com/dCf5iWf.png" style="max-width: 100%">
