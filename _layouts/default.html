@@ -10,7 +10,7 @@
 		</header>
 		<div id="main">
 			{% for category in site.categories %}
-			<li>{{ category | first }}</li>
+			{{ category | first }}
 			{% endfor %}
 			{{ content }}
 		</div>
