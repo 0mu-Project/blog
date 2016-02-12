@@ -18,11 +18,14 @@ post_author: 0mu
 就是進入休眠然後馬上醒來，心想很像是被某個裝置喚醒，開始追查，
 	
 偶然在 ArchForums看到了這篇文章，想說 bingo 就是你！
-	
-https://bbs.archlinux.org/viewtopic.php?pid=1575617#p1575617
-	
+		
 結論就是被 U3 給喚醒了...，解決方法給他一個 Service 讓他把 wakeup 關閉 U3...
 	
+ 
+ 
+ https://bbs.archlinux.org/viewtopic.php?pid=1575617#p1575617
+
+ 
  cd /etc/systemd/system/
 
  sudo vim disable-USB-wakeup.service
