@@ -1,6 +1,7 @@
 ---
 layout: list
 ---
+<section id="one">
 {% for category in site.categories %}
 <h2>{{ category | first }}</h2>
 <ul class="arc-list">
@@ -9,3 +10,4 @@ layout: list
 	{% endfor %}
 </ul> 
 {% endfor %}
+</section>
