@@ -2502,6 +2502,9 @@
 		top: 0;
 		width: 35%;
 	}
+	#header div{
+		background-color: rgba(255,255,255,0.3);
+	}
 
 		#header strong, #header b {
 			color: #000;
