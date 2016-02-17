@@ -2496,7 +2496,7 @@
 		color: rgba(0, 0, 0, 0.7);
 		height: 100%;
 		left: 0;
-		padding: 0 1em 0 0;
+		padding: 2em 0 0 0;
 		position: fixed;
 		text-align: center;
 		top: 0;
@@ -2507,7 +2507,7 @@
 	}
 
 		#header strong, #header b {
-			color: rgba(0,0,0,0.8);
+			color: rgba(0,0,0,1);
 		}
 
 		#header h2, #header h3, #header h4, #header h5, #header h6 {
@@ -2944,6 +2944,9 @@
 				top: auto;
 				width: 100%;
 			}
+	#header div{
+		background-color: rgba(255,255,255,0);
+	}
 
 				#header h1 {
 					font-size: 1.75em;
