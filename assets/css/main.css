@@ -2496,18 +2496,18 @@
 		color: rgba(0, 0, 0, 0.7);
 		height: 100%;
 		left: 0;
-		padding: 0 0 0 0;
+		padding: 0 1em 0 0;
 		position: fixed;
-		text-align: left;
+		text-align: center;
 		top: 0;
 		width: 35%;
 	}
 	#header div{
-		background-color: rgba(255,255,255,0);
+		background-color: rgba(255,255,255,0.1);
 	}
 
 		#header strong, #header b {
-			color: #fff;
+			color: rgba(0,0,0,0.8);
 		}
 
 		#header h2, #header h3, #header h4, #header h5, #header h6 {
