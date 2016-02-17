@@ -2498,12 +2498,12 @@
 		left: 0;
 		padding: 0em 0 0 0;
 		position: fixed;
-		text-align: center;
+		text-align: right;
 		top: 0;
 		width: 35%;
 	}
 	#header div{
-		padding: 0.5em 0 0 0;
+		padding: 0.5em 2em 0 0;
 		background-color: rgba(255,255,255,0.1);
 	}
 
@@ -2532,9 +2532,9 @@
 	#footer {
 		bottom: 0;
 		left: 0;
-		padding: 0 0em 0em 0;
+		padding: 0 2em 0.5em 0;
 		position: fixed;
-		text-align: center;
+		text-align: right;
 		width: 35%;
 	}
 
@@ -2543,11 +2543,11 @@
 		}
 
 			#footer .icons a {
-				color: rgba(0, 0, 0, 0.6);
+				color: rgba(255, 255, 255, 0.6);
 			}
 
 		#footer .copyright {
-			color: rgba(0, 0, 0, 1);
+			color: rgba(255, 255, 255, 1);
 			font-size: 0.8em;
 			list-style: none;
 			margin: 1em 0 0 0;
