@@ -2501,11 +2501,6 @@
 		text-align: right;
 		top: 0;
 		width: 35%;
-		  -webkit-filter: blur(1px);
-		    -moz-filter: blur(1px);
-			  -o-filter: blur(1px);
-			    -ms-filter: blur(1px);
-				  filter: blur(1px);
 	}
 	#header div{
 		padding: 0.5em 2em 0.2em 0;
@@ -2977,11 +2972,6 @@
 				position: relative;
 				text-align: center;
 				width: 100%;
-				  -webkit-filter: blur(1px);
-				    -moz-filter: blur(1px);
-					  -o-filter: blur(1px);
-					    -ms-filter: blur(1px);
-						  filter: blur(1px);
 			}
 
 				#footer .icons {
