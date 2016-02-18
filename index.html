@@ -4,7 +4,7 @@ layout: default
 按照日期顯示 / <a href="/list">按照分類顯示</a>
 			</hr>
 {% for post in paginator.posts %}
-<section id="one">
+<section>
 	<header class="major">
 		<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 	</header>
