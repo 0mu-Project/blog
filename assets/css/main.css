@@ -2139,7 +2139,7 @@
 			}
 
 				ul.icons li:last-child {
-					padding-right: 0;
+					padding-right: 2em;
 				}
 
 				ul.icons li .icon:before {
@@ -2539,9 +2539,6 @@
 	}
 	#footer div{
 	background-color: rgba(0,0,0,0.4);
-		padding: 0em 2em 0.2em 0;
-	}
-	#footer icondiv{
 		padding: 0em 2em 0.2em 0;
 	}
 		#footer .icons {
