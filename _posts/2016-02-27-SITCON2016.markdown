@@ -1,8 +1,0 @@
----
-layout: post
-title:  "這是篇測試用的SITCON貼文（？"
-date: 2016-02-27 15:10:00
-category: SITCON
-post_author: 0mu
- ---
- SITCON 2016 安安我來講桌上面寫部落格了（咦？
