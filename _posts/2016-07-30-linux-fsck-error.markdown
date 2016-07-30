@@ -4,15 +4,6 @@ title:  "Linux-FSCK錯誤-導致系統無法開機"
 date: 2016-07-30 10:25:10+0800
 post_author:零夢
 ---
-<!--
-	請依照以下格式填寫上面的發文標注
-	layout: post
-	title:  "你要的標題"
-	date:   20xx-xx-xx xx:xx:xx +0800
-	post_author: 作者
--->
-<!-- 內文  -->
-
 What is fsck !?
 > **f**ile **s**ystem **c**onsistency chec**k**
 > 簡單說:檔案系統檢測
@@ -31,4 +22,4 @@ How fix fsck error !?
 > fstab 動到 .. 還原吧
 > fsck -y /dev/sd?
 
-好了看完了總覽
+
