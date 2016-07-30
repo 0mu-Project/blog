@@ -5,14 +5,8 @@ date: 2016-07-30 10:25:10+0800
 post_author:零夢
 category: Linux
 ---
-<!--
-	請依照以下格式填寫上面的發文標注
-	layout: post
-	title:  "你要的標題"
-	date:   20xx-xx-xx xx:xx:xx +0800
-	post_author: 作者
--->
-<!-- 內文  -->
+某天打開了我的 ArchLinux 大概是難得的重開機
+反正就沒有然後了就炸了...
 
 What is fsck !?
 > **f**ile **s**ystem **c**onsistency chec**k**
