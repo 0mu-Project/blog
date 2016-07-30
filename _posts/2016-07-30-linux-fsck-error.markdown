@@ -3,7 +3,7 @@ layout: post
 title:  "Linux-FSCK錯誤-導致系統無法開機" 
 date: 2016-07-30 10:25:10+0800
 category: Linux
-post_author:零夢
+post_author: 0mu
 ---
 某天打開了我的 ArchLinux 大概是難得的重開機
 反正就沒有然後了就炸了...
