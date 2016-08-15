@@ -5,7 +5,7 @@ date: 2016-08-16 01:30:10+0800
 category: Linux
 post_author: 0mu
 ---
-What is fakeroot ? 
+## What is fakeroot ? 
 --
 如名字 Fake (假的) Root ，其實就是提供一個讓你以為你是 root (uid0) 的環境去騙程式，    
 其實他的目的就是要提供你一個環境去實作一些該用 Root 卻不能給 Root 權限的事情，    
@@ -19,18 +19,18 @@ What is fakeroot ?
 這時候你就會不太願意透過 sudo 去進行 文件操作，因此就有了 Fakeroot 這個 Fake Env 了。
     
 		
-How fakeroot Done it ?
+## How fakeroot Done it ?
 --
 先來說說 FakeRoot 的 Kernel 吧 faked 這個 binary ，跟 libfakeroot-sysv.so 這個動態連接函式庫    
 
-#### Faked  -
+### Faked  -
 他是一個 Linux Daemon （其實就是個程式會在後臺不停運作或是等候命令） 大陸稱為守護進程，    
 其目的就是管理虛擬的文件所有者(owner)/權限訊息的一隻小程式。    
 
-#### libfakeroot-sysv.so -
+### libfakeroot-sysv.so -
 他會在兩個主要的位置 /usr/lib/libfakeroot-sysv.so /usr/lib/libfakeroot/libfakeroot-sysv.so    
     
-**/usr/lib/libfakeroot/libfakeroot-sysv.so** - 是一個動態連接函式庫提供了以下的function：
+#### **/usr/lib/libfakeroot/libfakeroot-sysv.so** - 是一個動態連接函式庫提供了以下的function：
     
 getuid() , geteuid() , getguid() , getegid()    
 mknod(),chown(),lchown(),fchown()    
@@ -38,7 +38,7 @@ chmod(),fchmod(),mkdir(),lstat()
 fstat(),stat(),unlink(),remove(),rmdir(),rename()    
 這些 function 會跟 對 faked 進行命令另 faked 進行虛擬檔案操作。    
      
-**/usr/lib/libfakeroot-sysv.so** - 是一個 dummy 函式庫，原因是為了 suid 這個動作而生    
+#### **/usr/lib/libfakeroot-sysv.so** - 是一個 dummy 函式庫，原因是為了 suid 這個動作而生    
     
 在使用 fakeroot 運作一般的程式時，fakeroot 會產生幾個環境變數如下：    
 FAKEROOTKEY- 基本上就是 Fakeroot 跟 faked 的 authkey    
@@ -48,7 +48,7 @@ LD_PRELOAD - lib 本身 libfakeroot-sysv.so
 導致 fakeroot  去直接尋找位於 /usr/lib/ 底下的 preload，如果沒有這個 lib 就會噴出錯誤，    
 因此fakeroot 特別在此放入一個 dummy 函式庫，此時 suid 這個程式就會不經過 faked 正常執行。    
      
-#### 完整流程 -
+### 完整流程 -
 看了這些大概能理解這些東西在幹嘛了，其實 fakeroot 本身是一隻 shellscript 他是這樣運作的：
     
 fakeroot -> 打開 faked 取得 fakerootkey -> 設定三個環境變數 FAKEROOTKEY / LD_LIBRARY_PATH  / LD_PRELOAD -> 執行命令    
