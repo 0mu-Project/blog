@@ -19,8 +19,8 @@ post_author: 0mu
 這時候你就會不太願意透過 sudo 去進行 文件操作，因此就有了 Fakeroot 這個 Fake Env 了。    
     
 		
-## How fakeroot Done it ?
---
+## How fakeroot Done it ?    
+    
 先來說說 FakeRoot 的 Kernel 吧 faked 這個 binary ，跟 libfakeroot-sysv.so 這個動態連接函式庫    
 
 ### Faked  -
