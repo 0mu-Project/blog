@@ -28,7 +28,8 @@ How fakeroot Done it ?
 其目的就是管理虛擬的文件所有者(owner)/權限訊息的一隻小程式。    
 
 #### libfakeroot-sysv.so -
-他會在兩個主要的位置 /usr/lib/libfakeroot-sysv.so /usr/lib/libfakeroot/libfakeroot-sysv.so
+他會在兩個主要的位置 /usr/lib/libfakeroot-sysv.so /usr/lib/libfakeroot/libfakeroot-sysv.so    
+    
 **/usr/lib/libfakeroot/libfakeroot-sysv.so** - 是一個動態連接函式庫提供了以下的function，  
     
 getuid() , geteuid() , getguid() , getegid()    
