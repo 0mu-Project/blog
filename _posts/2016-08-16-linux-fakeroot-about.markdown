@@ -18,7 +18,8 @@ post_author: 0mu
 你會發現你會需要這個包裡面的文件所有者是 root 但是，你又不希望 ABS 動到你的 System Root ，    
 這時候你就會不太願意透過 sudo 去進行 文件操作，因此就有了 Fakeroot 這個 Fake Env 了。    
     
-		
+</hr>		
+    
 ## How fakeroot Done it ?    
     
 先來說說 FakeRoot 的 Kernel 吧 faked 這個 binary ，跟 libfakeroot-sysv.so 這個動態連接函式庫    
@@ -51,7 +52,8 @@ post_author: 0mu
 導致 fakeroot  去直接尋找位於 /usr/lib/ 底下的 preload，如果沒有這個 lib 就會噴出錯誤，    
 因此fakeroot 特別在此放入一個 dummy 函式庫，此時 suid 這個程式就會不經過 faked 正常執行。    
       
-    
+</hr>		
+		
 ## 完整流程 
 
 看了這些大概能理解這些東西在幹嘛了，其實 fakeroot 本身是一隻 shellscript 他是這樣運作的：
