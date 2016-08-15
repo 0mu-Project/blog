@@ -30,15 +30,16 @@ How fakeroot Done it ?
 #### libfakeroot-sysv.so -
 他會在兩個主要的位置 /usr/lib/libfakeroot-sysv.so /usr/lib/libfakeroot/libfakeroot-sysv.so    
     
-**/usr/lib/libfakeroot/libfakeroot-sysv.so** - 是一個動態連接函式庫提供了以下的function，  
+**/usr/lib/libfakeroot/libfakeroot-sysv.so** - 是一個動態連接函式庫提供了以下的function：
     
 getuid() , geteuid() , getguid() , getegid()    
 mknod(),chown(),lchown(),fchown()    
 chmod(),fchmod(),mkdir(),lstat()    
 fstat(),stat(),unlink(),remove(),rmdir(),rename()    
-
+這些 function 會跟 對 faked 進行命令另 faked 進行虛擬檔案操作。    
      
-**/usr/lib/libfakeroot-sysv.so** - 是一個 dummy 函式庫，原因是為了 suid 這個動作而生，    
+**/usr/lib/libfakeroot-sysv.so** - 是一個 dummy 函式庫，原因是為了 suid 這個動作而生    
+    
 在使用 fakeroot 運作一般的程式時，fakeroot 會產生幾個環境變數如下：    
 FAKEROOTKEY- 基本上就是 Fakeroot 跟 faked 的 authkey    
 LD_LIBRARY_PATH - 存放著 libfakeroot-sysv.so 存在的目錄位置 (/usr/lib/libfakeroot)    
