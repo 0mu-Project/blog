@@ -7,5 +7,7 @@ post_author: 0mu
 ---
 What is fakeroot ? 
 --
+如名字 Fake (假的) Root ，其實就是提供一個讓你以為你是 root (uid0) 的環境去騙程式，
+
 
 
