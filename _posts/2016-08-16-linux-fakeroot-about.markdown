@@ -17,6 +17,26 @@ What is fakeroot ?
     
 你會發現你會需要這個包裡面的文件所有者是 root 但是，你又不希望 ABS 動到你的 System Root ，    
 這時候你就會不太願意透過 sudo 去進行 文件操作，因此就有了 Fakeroot 這個 Fake Env 了。
+    
+		
+How fakeroot Done it ?
+--
+先來說說 FakeRoot 的 Kernel 吧 faked 這個 binary ，跟 libfakeroot-sysv.so 這個動態連接函式庫    
+
+#### Faked  -
+他是一個 Linux Daemon （其實就是個程式會在後臺不停運作或是等候命令） 大陸稱為守護進程，    
+其目的就是管理虛擬的文件所有者(owner)/權限訊息的一隻小程式。    
+
+#### libfakeroot-sysv.so -
+他是一個動態連接函式庫提供了以下的function，  
+    
+getuid() , geteuid() , getguid() , getegid()    
+mknod(),chown(),lchown(),fchown()    
+chmod(),fchmod(),mkdir(),lstat()    
+fstat(),stat(),unlink(),remove(),rmdir(),rename()    
+    
+看了這些大概能理解這些東西在幹嘛了，其實就是讓 fakeroot -> /usr/lib/libfakeroot/libfakeroot-sysv.so -> faked
+
 
 
 
