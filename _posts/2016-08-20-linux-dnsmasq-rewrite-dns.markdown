@@ -21,6 +21,9 @@ post_author: 0mu
     
 		
 ## 讓我們開始吧    
+    
+---
+    
 ### Step 1.    Fxck default dns manager in  NM    
 我們先把 nm 的 dns 管理功能拔了 要不然你會發現 每次開機你的電腦都會幫你透過 nm 建立 resolv.conf
     
