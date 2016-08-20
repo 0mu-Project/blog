@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Linux-在 Network Manager 環境之下透過 dnsmasq 管理 DNS 記錄" 
-date: 2016-08-16 01:30:10+0800
+date: 2016-08-20 12:30:10+0800
 category: Linux
 post_author: 0mu
 ---
