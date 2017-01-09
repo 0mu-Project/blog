@@ -15,14 +15,17 @@ Linux 中我們常常見到各種 Xwindow (X.org / Wayland )應用程式，不�
 
 ``` 
 XWindow System (X視窗系統) :    
-提供了 Linux GUI 的一切基本，不管要用 QT / GTK+ 等圖形化函數庫都要基於它，目前常見的是 X.org 以及相對於 X.org 新的 Wayland .        
+提供了 Linux GUI 的一切基本，不管要用 QT / GTK+ 等圖形化函數庫都要基於它，
+目前常見的是 X.org 以及相對於 X.org 新的 Wayland .        
     
 Desktop Envirement  (DE / 桌面環境):    
-用來控制桌面，視窗，目錄，通知，以及相關圖形化相關的界面的環境，提供給使用者一個統一完整的圖形化界面體驗，目前常見的為 Gnome / KDE / Unity 等等 。    
+用來控制桌面，視窗，目錄，通知，以及相關圖形化相關的界面的環境，提供給使用者一個統一完整的圖形化界面體驗，
+目前常見的為 Gnome / KDE / Unity 等等 。    
      
 Windows Manager (WM/視窗管理器):    
-可以獨立於 DE 存在的，用途是拿來控制視窗的表現，主要有三大類型，浮動/平鋪/動態式，不過其實每一個 DE 幾乎都有提供一個自己的 WM 來統一風格，    
-目前常見的DE 自帶的為 Gnome 使用的 Mutter 以及 KDE 使用的 Kwin ，而相對比較有名氣的獨立WM有 Awesome / i3 / WMFS 。       
+可以獨立於 DE 存在的，用途是拿來控制視窗的表現，主要有三大類型，浮動/平鋪/動態式，
+不過其實每一個 DE 幾乎都有提供一個自己的 WM 來統一風格，    
+目前常見的DE 自帶:  Mutter(Gnome) /Kwin (KDE) ，而相對比較有名氣的獨立WM有 Awesome / i3 / WMFS 。       
      
 Display Manager (DM/顯示管理器):    
 一樣可以是獨立於 DE 的，基本上提供一個登入界面，讓你選擇 DE / WM ，目前常見的是 GDM / LightDM / KDM / SDDM
