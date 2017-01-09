@@ -44,7 +44,7 @@ Display Manager (DM/顯示管理器):
 目前常見的是 i3 / WMFS / WMFS2 / StumpWM
 
 浮動式 (Stacking/Floating): 
-對於一般的圖型化使用者不管是 macOS / Windows 或是 常見的 DE 較為熟識，畫面可以分層可以堆疊可以誰前誰後但是無法規律化整理。
+對於一般的圖型化使用者不管是 macOS / Windows 或是常見的 DE 較為熟識，畫面可以分層可以堆疊。
 目前常見的是 Mutter(Gnome) / Kwin(KDE) / OpenBox / Fluxbox
 
 動態式(Dynamic):
