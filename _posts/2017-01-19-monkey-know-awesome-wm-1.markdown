@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "連猴子都會用的 Awesome WM 教學 - 壹" 
-date: 2016-01-09 06:23:59+0800
+date: 2017-01-09 06:23:59+0800
 post_author: 0mu
 category: Linux
 ---
